@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script type="text/javascript">
+    function range(start, end) {
+        var ans = [];
+        for (let i = start; i <= end; i++) {
+            ans.push(i);
+        }
+        return ans;
+    }
+
+    </script>
+    <style media="screen">
+    .button {
+        background-color: red;
+        border: none;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+    }
+    .button1 {border-radius: 6px;}
+    .button2 {border-radius: 6px;}
+
+    table, th, td {
+  border: 1px solid black;
+}
+.lucky_driver {
+  color: red;
+}
+
+
+
+    </style>
+
+    <script type="text/javascript">
+      function driver_contact(){
+        window.open("https://isamelb.github.io/transporter2/")
+      }
+
+
+      function customer_contact(){
+        window.open("https://isamelb.github.io/transporter2/")}
+
+    </script>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body  onload ="random_driver()"  style="background-color: yellow">
+    <div class="" align="center">
+
+
+    <img src="./van2.jpeg" alt="van">
+    <p>
+<h1>قائمة الناقلين
+</h1>
+يهدف تطبيق الويب هذا إلى مساعدة الناس في العثور على شركات نقل إلى المغرب بسرعة وكفاءة مع الحد الأدنى من المتاعب. حظ جيد
+
+
+
+
+
+    </p>
+      <h3>أسماء وأرقام الناقلين
+</h3>
+      <h1 class="lucky_driver"color ="red" id ="display_driver"> Lucky Transporter of the page </h1>
+
+    <table style="width:100%">
+  <tr>
+    <th>الاسم الاول
+</th>
+
+    <th>اتصل بالسائق
+</th>
+
+    <th>معلومات</th>
+  </tr>
+  <tr>
+    <td>حسن لبوندا </td>
+
+    <td><a href="tel:447852119951"  >تلفون</a> </td>
+
+    <td>سائق من ذوي الخبرة وموثوق بها للغاية
+</td>
+  </tr>
+  <tr>
+    <td>ادريس</td>
+
+    <td><a href="tel:447834351964"  >تلفون</a> </td>
+
+    <td>سائق جيد مع سجل حافل
+</td>
+  </tr>
+  <tr>
+    <td>هشام</td>
+
+    <td><a href="tel:447809566087" >تلفون</a> </td>
+
+    <td>سائق يعمل بجد وموثوق به
+    </tr>
+    <tr>
+      <td>حسن تطواني</td>
+
+      <td><a href="tel:447392408365" >تلفون</a> </td>
+
+      <td>سائق يعمل بجد وموثوق به
+</td>
+  </tr>
+</table>
+
+    <h3>للسائقين لإضافة التفاصيل الخاصة بك إلى تطبيق الويب لدينا
+</h3>
+    <button  class="button button1" onclick="driver_contact()"  type="button" name="button">اضغط هنا</button>
+
+
+
+      </div>
+      <script type="text/javascript">
+      function random_driver(){
+
+        var names =range(1,4);
+
+        var name = names[Math.floor(Math.random()*names.length)];
+        if (name === 1){document.getElementById("display_driver").innerHTML ="حسن بوندا هو سائق اليوم ، ونحن نوصي به\
+        \
+";
+      }
+      else if(name === 2){
+        document.getElementById("display_driver").innerHTML ="دريس هو سائق اليوم ، ونحن نوصي به\
+        \
+";
+      }
+      else if(name===4) {document.getElementById("display_driver").innerHTML="هشام هو سائق اليوم ، نوصي به\
+      \
+";
+
+      }
+      else {document.getElementById("display_driver").innerHTML="حسن تطوان هو سائق اليوم ، ونحن نوصي به\
+      \
+";
+
+      }
+      }
+      </script>
+
+  </body>
+</html>
